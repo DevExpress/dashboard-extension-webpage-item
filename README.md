@@ -15,4 +15,4 @@ function onBeforeRender(sender) {
 
 ## Settings
 The **Web Page** dashboard item supports the following settings that you can configure in the Wed Dashboard UI:
-* **URL** - Specifies a web page URL. You can set a single page as well as a set of pages (e.g., https://en.wikipedia.org/wiki/{0}). If you add a dimension and specify a placeholder, the data source field returns strings that will be inserted to the position of the {0} placeholder. Thus, the Web Page item join the specified URL with the current dimension value and display the page located by this address.
+* **URL** - Specifies a web page URL. You can set a single page as well as a set of pages (e.g., https://en.wikipedia.org/wiki/{0}). If you add a dimension and specify a placeholder, the data source field returns strings that will be inserted to the position of the {0} placeholder. Thus, the Web Page item joins the specified URL with the current dimension value and display the page located by this address.
