@@ -11,7 +11,7 @@ This dashboard item supports the following capabilities:
 
 To add the Funnel3D custom item extension to the Web Dashboard, follow the steps below. 
 
-1. Attach both D3.js v4.x and D3Funnel scripts to the project. You can find these libraries here: [D3](https://github.com/d3/d3) and [D3Funnel](https://github.com/jakezatecky/d3-funnel).
+1. Attach both the D3.js v4.x and D3Funnel scripts to the project. You can find these libraries here: [D3](https://github.com/d3/d3) and [D3Funnel](https://github.com/jakezatecky/d3-funnel).
 
 ```xml
 <script src="/path/to/d3.v4.js"></script>
