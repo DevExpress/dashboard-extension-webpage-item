@@ -20,8 +20,6 @@ module CustomItems {
             defaultVal: 'https://en.wikipedia.org/wiki/{0}'
         }],
         icon: WEBPAGE_EXTENSION_NAME,
-        groupName: "custom",
-        groupTitle: "DashboardWebCustomItemStringId.ToolBoxCustomItemCaption",
         title: "Web Page",
         index: 2
     };
