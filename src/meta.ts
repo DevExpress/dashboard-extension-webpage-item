@@ -4,17 +4,17 @@ module CustomItems {
     export var WEBPAGE_EXTENSION_NAME = 'WebPage';
 
     export var webPageMeta = {
-        bindings: <Array<DevExpress.JS.Dashboard.ICustomItemBinding>>[{
+        bindings: <Array<DevExpress.Dashboard.ICustomItemBinding>>[{
             propertyName: 'Attribute',
             dataItemType: 'Dimension',
             array: false,
             displayName: "Attribute",
-            placeholder: 'Set Attribute',
-            configurePlaceholder: "Configure Attribute"
+            emptyPlaceholder: 'Set Attribute',
+            selectedPlaceholder: "Configure Attribute"
         }],
-        properties: <Array<DevExpress.JS.Dashboard.ICustomItemProperty>>[{
+        properties: <Array<DevExpress.Dashboard.ICustomItemProperty>>[{
             propertyName: 'Url',
-            editor: DevExpress.JS.Dashboard.Metadata.editorTemplates.text,
+            editor: DevExpress.Dashboard.Metadata.editorTemplates.text,
             displayName: "Url",
             sectionName: "Custom Options",
             defaultVal: 'https://en.wikipedia.org/wiki/{0}'

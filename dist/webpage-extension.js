@@ -13,12 +13,12 @@ var CustomItems;
                 dataItemType: 'Dimension',
                 array: false,
                 displayName: "Attribute",
-                placeholder: 'Set Attribute',
-                configurePlaceholder: "Configure Attribute"
+                emptyPlaceholder: 'Set Attribute',
+                selectedPlaceholder: "Configure Attribute"
             }],
         properties: [{
                 propertyName: 'Url',
-                editor: DevExpress.JS.Dashboard.Metadata.editorTemplates.text,
+                editor: DevExpress.Dashboard.Metadata.editorTemplates.text,
                 displayName: "Url",
                 sectionName: "Custom Options",
                 defaultVal: 'https://en.wikipedia.org/wiki/{0}'
@@ -60,7 +60,7 @@ var CustomItems;
             this._iframe.attr('src', this.getPropertyValue('Url').replace('{0}', attribute));
         };
         return webPageItem;
-    }(DevExpress.JS.Dashboard.customViewerItem));
+    }(DevExpress.Dashboard.customViewerItem));
     CustomItems.webPageItem = webPageItem;
 })(CustomItems || (CustomItems = {}));
 /// <reference path="meta.ts" />

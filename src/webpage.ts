@@ -4,7 +4,7 @@
 
 module CustomItems {
 
-    export class WebPageItemExtension implements DevExpress.JS.Dashboard.ICustomItemExtension {
+    export class WebPageItemExtension implements DevExpress.Dashboard.ICustomItemExtension {
         name = WEBPAGE_EXTENSION_NAME;
         metaData = webPageMeta;
 
@@ -12,7 +12,7 @@ module CustomItems {
             dashboardControl.registerIcon(WEBPAGE_ICON);
         }
 
-        public createViewerItem = (model: DevExpress.JS.Dashboard.ICustomItemModel, $element: JQuery, content: any, args: { viewerItem: DevExpress.JS.Dashboard.customViewerItem }) => {
+        public createViewerItem = (model: DevExpress.Dashboard.ICustomItemModel, $element: JQuery, content: any, args: { viewerItem: DevExpress.Dashboard.customViewerItem }) => {
             if(model.customItemType() === this.name) {
                 args.viewerItem = new CustomItems.webPageItem(model, $element, content);
             }

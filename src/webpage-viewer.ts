@@ -2,10 +2,10 @@
 /// <reference path="meta.ts" />
 
 module CustomItems {
-    export class webPageItem extends DevExpress.JS.Dashboard.customViewerItem {
+    export class webPageItem extends DevExpress.Dashboard.customViewerItem {
         private _iframe: any;
 
-        constructor(model: DevExpress.JS.Dashboard.ICustomItemModel, $container, options) {
+        constructor(model: DevExpress.Dashboard.ICustomItemModel, $container, options) {
             super(model, $container, options);
             this._iframe = undefined;
         }
