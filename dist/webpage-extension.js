@@ -52,7 +52,7 @@ var CustomItems;
                 this._iframe.attr('height', '100%');
                 $element.append(this._iframe);
             }
-            this.model.iterateData(function (row) {
+            this.iterateData(function (row) {
                 if (!attribute) {
                     attribute = row.getDisplayText('Attribute');
                 }
@@ -70,13 +70,10 @@ var CustomItems;
 (function (CustomItems) {
     var WebPageItemExtension = (function () {
         function WebPageItemExtension(dashboardControl) {
-            var _this = this;
             this.name = CustomItems.WEBPAGE_EXTENSION_NAME;
             this.metaData = CustomItems.webPageMeta;
-            this.createViewerItem = function (model, $element, content, args) {
-                if (model.customItemType() === _this.name) {
-                    args.viewerItem = new CustomItems.webPageItem(model, $element, content);
-                }
+            this.createViewerItem = function (model, $element, content) {
+                return new CustomItems.webPageItem(model, $element, content);
             };
             dashboardControl.registerIcon(CustomItems.WEBPAGE_ICON);
         }

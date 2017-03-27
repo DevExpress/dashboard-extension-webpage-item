@@ -12,10 +12,8 @@ module CustomItems {
             dashboardControl.registerIcon(WEBPAGE_ICON);
         }
 
-        public createViewerItem = (model: DevExpress.Dashboard.ICustomItemModel, $element: JQuery, content: any, args: { viewerItem: DevExpress.Dashboard.customViewerItem }) => {
-            if(model.customItemType() === this.name) {
-                args.viewerItem = new CustomItems.webPageItem(model, $element, content);
-            }
+        public createViewerItem = (model: any, $element: JQuery, content: any) => {
+            return new CustomItems.webPageItem(model, $element, content);
         };
     }
 }

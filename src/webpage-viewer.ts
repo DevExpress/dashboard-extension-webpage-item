@@ -5,7 +5,7 @@ module CustomItems {
     export class webPageItem extends DevExpress.Dashboard.customViewerItem {
         private _iframe: any;
 
-        constructor(model: DevExpress.Dashboard.ICustomItemModel, $container, options) {
+        constructor(model: any, $container, options) {
             super(model, $container, options);
             this._iframe = undefined;
         }
@@ -18,7 +18,7 @@ module CustomItems {
                 this._iframe.attr('height', '100%');
                 $element.append(this._iframe);
             }
-            this.model.iterateData(row => {
+            this.iterateData(row => {
                 if(!attribute) {
                     attribute = row.getDisplayText('Attribute');
                 }
