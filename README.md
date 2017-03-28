@@ -16,3 +16,15 @@ function onBeforeRender(sender) {
 ## Settings
 The **Web Page** dashboard item supports the following setting that you can configure in the Wed Dashboard UI:
 * **URL** - Specifies a web page URL. You can set a single page as well as a set of pages (e.g., https://en.wikipedia.org/wiki/{0}). If you add a dimension and specify a placeholder, the data source field returns strings that will be inserted in the position of the {0} placeholder. Thus, the Web Page item joins the specified URL with the current dimension value and displays the page located by this address.
+
+## License
+
+Familiarize yourself with the [.NET Controls & Frameworks Commercial License](https://www.devexpress.com/Support/EULAs/NetComponents.xml). [Free trial is available](https://go.devexpress.com/DevExpressDownload_UniversalTrial.aspx)!
+
+**The Web Page custom dashboard extension is released as a MIT-licensed (free and open-source) add-on to the Web Dashboard.**
+
+## Support & Feedback
+
+* Follow [this guideline](https://isc.devexpress.com/Thread/WorkplaceDetails/T491859) for general information about a custom extension.
+* To learn how to create a custom item, see the following [KB article](https://isc.devexpress.com/Thread/WorkplaceDetails/T491984).
+* To address questions regarding the Web Dashboard and JavaScript API, use [DevExpress Support Center](https://www.devexpress.com/Support/Center).
