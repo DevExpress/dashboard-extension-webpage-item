@@ -2,11 +2,26 @@ A  custom **Web Page** item allows you to display a single web page or a set of 
 
 ## Installation
 
-To add the Web Page dashboard item to the Web Dashboard, register a custom item extension in the Web Dashboard's [BeforeRender](https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWebScriptsASPxClientDashboard_BeforeRendertopic) event.
+1. Download the required scripts [here](https://github.com/DevExpress/dashboard-extension-webpage-item/releases) and place them in your project.
+
+2. Attach the download script to the project.
+```xml
+<script src="/your-path/dashboard-extension-webpage-item/dist/webpage-extension.min.js"></script>
+```
+
+3. Handle the Web Dashboard's [BeforeRender](https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWebScriptsASPxClientDashboard_BeforeRendertopic) event to perform client-side customization of the Web Dashboard control before the control and its elements have been rendered.
+```xml
+<dx:ASPxDashboard ID="ASPxDashboard1" runat="server" DashboardStorageFolder="~/App_Data">
+  <ClientSideEvents BeforeRender="onBeforeRender" />
+</dx:ASPxDashboard>
+```
+
+
+4. Register the custom item extension to add the Web Page to the Web Dashboard.
 
 ```javascript
 function onBeforeRender(sender) {
-  var dashboardControl = sender.getDesigner();
+  var dashboardControl = sender.GetDashboardControl();
   dashboardControl.registerExtension(new CustomItems.WebPageItemExtension(dashboardControl));
 }
 ```
