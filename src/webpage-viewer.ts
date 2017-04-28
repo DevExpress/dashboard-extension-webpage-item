@@ -20,7 +20,7 @@ module CustomItems {
             }
             this.iterateData(row => {
                 if(!attribute) {
-                    attribute = row.getDisplayText('Attribute');
+                    attribute = row.getDisplayText('Attribute')[0];
                 }
             });
             this._iframe.attr('src', this.getPropertyValue('Url').replace('{0}', attribute));
