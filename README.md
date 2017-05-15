@@ -1,4 +1,4 @@
-A  custom **Web Page** item allows you to display a single web page or a set of pages. You can use the Web Page as a detail item along with the [Master-Filtering](https://documentation.devexpress.com/#Dashboard/CustomDocument117060) feature.
+A  custom **Web Page** item displays a single web page or a set of pages. You can use the Web Page as a detail item along with the [Master-Filtering](https://documentation.devexpress.com/#Dashboard/CustomDocument117060) feature.
 
 ## Installation
 
