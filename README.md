@@ -41,7 +41,7 @@ Before you start, we advise you to [fork](https://help.github.com/articles/fork-
 1. Clone this extension to get a local copy of the repository.
 ```Batchfile
 git clone https://github.com/DevExpress/dashboard-extension-webpage-item.git
-cd dashboard-extension-online-map-item
+cd dashboard-extension-webpage-item
 ```
 
 2. In this extension we use the [Node.js](https://nodejs.org/en/about/) toolset. Use the command below to install all modules listed as dependencies in the extension's **package.json** file.
