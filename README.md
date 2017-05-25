@@ -32,6 +32,37 @@ The **Web Page** dashboard item supports the following setting that you can conf
 ![image](https://cloud.githubusercontent.com/assets/17986517/25003645/2caf344c-2059-11e7-999d-2d0dc44abb65.png)
 * **URL** - Specifies a web page URL. You can set a single page as well as a set of pages (e.g., https://en.wikipedia.org/wiki/{0}). If you add a dimension and specify a placeholder, the data source field returns strings that will be inserted in the position of the {0} placeholder. Thus, the Web Page item joins the specified URL with the current dimension value and displays the page located by this address.
 
+## Development 
+
+You can use this extension code as a base for your own [dashboard item extension](https://documentation.devexpress.com/#Dashboard/CustomDocument117546) development. 
+
+Before you start, we advise you to [fork](https://help.github.com/articles/fork-a-repo/) this repository and work with your own copy.
+
+1. Clone this extension to get a local copy of the repository.
+```Batchfile
+git clone https://github.com/DevExpress/dashboard-extension-webpage-item.git
+cd dashboard-extension-online-map-item
+```
+
+2. In this extension we use the [Node.js](https://nodejs.org/en/about/) toolset. Use the command below to install all modules listed as dependencies in the extension's **package.json** file.
+```Batchfile
+npm install
+```
+
+3. Then install [Gulp](http://gulpjs.com) to build the solution. You can install it globally...
+```Batchfile
+npm install -g gulp
+gulp build
+```
+
+... or use a local Gulp version.
+```Batchfile
+./node_modules/.bin/gulp build
+```
+
+You can find the resulting files at ```...\dashboard-extension-webpage-item\dist```:
+**webpage-extension.js** and **webpage-extension.min.js**.
+
 ## License
 
 This extension is distributed under the **MIT** license (free and open-source), but can only be used with a commercial DevExpress Dashboard software product. You can [review the license terms](https://www.devexpress.com/Support/EULAs/NetComponents.xml) or [download a free trial version](https://go.devexpress.com/DevExpressDownload_UniversalTrial.aspx) of the Dashboard suite at [DevExpress.com](https://www.devexpress.com).
