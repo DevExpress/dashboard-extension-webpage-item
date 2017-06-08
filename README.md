@@ -2,7 +2,7 @@ A  custom **Web Page** item displays a single web page or a set of pages. You ca
 
 ## Installation
 
-1. Download the required scripts [here](https://github.com/DevExpress/dashboard-extension-webpage-item/releases) and place them in your project.
+1. Download the required version of scripts [here](https://github.com/DevExpress/dashboard-extension-webpage-item/releases) and add the *dist* folder in your project.
 
 2. Attach the download script to the project.
 ```xml
