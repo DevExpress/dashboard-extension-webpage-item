@@ -2,18 +2,29 @@ A  custom **Web Page** item displays a single web page or a set of pages. You ca
 
 ## Installation
 
-1. Download the required version of scripts [here](https://github.com/DevExpress/dashboard-extension-webpage-item/releases) and add the *dist* folder in your project.
+1. Download the latest version of scripts [here](https://github.com/DevExpress/dashboard-extension-webpage-item/releases) and add the *dist* folder in your project.
 
 2. Attach the download script to the project.
 ```xml
-<script src="/your-path/dashboard-extension-webpage-item/dist/webpage-extension.min.js"></script>
+<head>
+    <script src="/your-path/dashboard-extension-webpage-item/dist/webpage-extension.min.js"></script>
+    <!-- ... -->
+</head>
 ```
 
 3. Handle the Web Dashboard's [BeforeRender](https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWebScriptsASPxClientDashboard_BeforeRendertopic) event to perform client-side customization of the Web Dashboard control before the control and its elements have been rendered.
 ```xml
-<dx:ASPxDashboard ID="ASPxDashboard1" runat="server" DashboardStorageFolder="~/App_Data">
+<!-- For ASP.NET Web Forms -->
+<dx:ASPxDashboard ID="ASPxDashboard1" runat="server" DashboardStorageFolder="~/App_Data/Dashboards">
   <ClientSideEvents BeforeRender="onBeforeRender" />
 </dx:ASPxDashboard>
+```
+```C#
+@* For ASP.NET MVC *@
+@Html.DevExpress().Dashboard(settings => {
+    settings.Name = "Dashboard";
+    settings.ClientSideEvents.BeforeRender = "onBeforeRender";
+}).GetHtml()
 ```
 
 
