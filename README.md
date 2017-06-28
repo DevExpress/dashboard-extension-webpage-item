@@ -2,17 +2,19 @@ A  custom **Web Page** item displays a single web page or a set of pages. You ca
 
 ## Installation
 
-1. Download the latest version of scripts [here](https://github.com/DevExpress/dashboard-extension-webpage-item/releases) and add the *dist* folder in your project.
+1. Download the latest version of scripts [here](https://github.com/DevExpress/dashboard-extension-webpage-item/releases).
 
-2. Attach the download script to the project.
+2. Add the *dist* folder in your project.
+
+3. Attach the download script to the project inside the `<head>` section onto the page containing Web Dashboard.
 ```xml
 <head>
-    <script src="/your-path/dashboard-extension-webpage-item/dist/webpage-extension.min.js"></script>
+    <script src="/dist/webpage-extension.min.js"></script>
     <!-- ... -->
 </head>
 ```
 
-3. Handle the Web Dashboard's [BeforeRender](https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWebScriptsASPxClientDashboard_BeforeRendertopic) event to perform client-side customization of the Web Dashboard control before the control and its elements have been rendered.
+4. Handle the Web Dashboard's [BeforeRender](https://documentation.devexpress.com/#Dashboard/DevExpressDashboardWebScriptsASPxClientDashboard_BeforeRendertopic) event to perform client-side customization of the Web Dashboard control before the control and its elements have been rendered.
 ```xml
 <!-- For ASP.NET Web Forms -->
 <dx:ASPxDashboard ID="ASPxDashboard1" runat="server" DashboardStorageFolder="~/App_Data/Dashboards">
@@ -28,7 +30,7 @@ A  custom **Web Page** item displays a single web page or a set of pages. You ca
 ```
 
 
-4. Register the custom item extension to add the Web Page to the Web Dashboard.
+5. Register the custom item extension to add the Web Page to the Web Dashboard.
 
 ```javascript
 function onBeforeRender(sender) {
@@ -80,6 +82,6 @@ This extension is distributed under the **MIT** license (free and open-source), 
 
 ## Support & Feedback
 
-* Follow [this guideline](https://www.devexpress.com/Support/Center/Question/Details/T491859) for general information about a custom extension.
+* Refer to [this section](https://documentation.devexpress.com/#Dashboard/CustomDocument117232) for general information about client-side extensions.
 * To learn how to create a custom item, see the following [KB article](https://www.devexpress.com/Support/Center/Question/Details/T491984).
 * To address questions regarding the Web Dashboard and JavaScript API, use [DevExpress Support Center](https://www.devexpress.com/Support/Center).
