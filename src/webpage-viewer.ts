@@ -13,9 +13,13 @@ module CustomItems {
         renderContent($element: JQuery, changeExisting: boolean, afterRenderCallback?) {
             var attribute;
             if(!changeExisting || !this._iframe) {
-                this._iframe = $('<iframe>');
-                this._iframe.attr('width', '100%');
-                this._iframe.attr('height', '100%');
+                this._iframe = $('<iframe>', { 
+                    attr: {
+                        width: '100%',
+                        height: '100%'
+                    },
+                    style: 'border: none;'
+                });
                 $element.append(this._iframe);
             }
             this.iterateData(row => {
