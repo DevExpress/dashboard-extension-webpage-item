@@ -6,11 +6,6 @@ module CustomItems {
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="` + webPageMeta.icon + `" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-<style type="text/css">
-	.dx_blue{fill:#579ADD;}
-	.dx_white{fill:#FFFFFF;}
-	.dx_darkgray{fill:#414141;}
-</style>
 <path class="dx_darkgray" d="M20,23H4c-0.6,0-1-0.4-1-1V2c0-0.6,0.4-1,1-1h12.6c0.3,0,0.5,0.1,0.7,0.3l3.4,3.4
 	C20.9,4.9,21,5.1,21,5.4V22C21,22.6,20.6,23,20,23z"/>
 <path class="dx_white" d="M19,21H5V3h11v2c0,0.6,0.4,1,1,1h2V21z"/>
